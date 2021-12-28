@@ -1,2 +1,2 @@
 # BITcc
-Base Integrada de Trabalhos de Conclusão de Curso
+Integrated Course Completion Work Base
