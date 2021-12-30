@@ -1,17 +1,5 @@
-# Relatorio de Especificacoes de casos de uso
-
-## Engenharia de Sofware - turma ES
-
-### Integrantes
-- Lucas Hellanio
-
-## Sumário
-- Cadastro
-- ?
-- ?
-- ?
-
 # Cadastro
+
 - ### Descrição 
     Ao aproximar-se do término do curso, é necessário realizar o trabalho de conclusão de curso: [TCC](https://comoelaborarumtcc.net/), mentorado por um educador. Para se fazer uso da plataforma é preciso realizar um cadastro de acordo com suas especificações, utilizando a plataforma de forma distinta em decorrência da sua posição acadêmica (estudante ou educador). Será necessário para o cadastro como aluno, o nome completo, E-mail ecomp, CPF e senha. Para o cadastro na posição de educador, haverá um campo adicional que solicitará o código do educador.
 
