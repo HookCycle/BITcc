@@ -1,0 +1,23 @@
+.progress-container {
+  width: 50vw;
+  height: 5px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #e0e0de;
+}
+
+.step {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  border-width: 1;
+  background-color: #e0e0de;
+}
+
+.step span {
+  color: var(--color-button-text);
+}

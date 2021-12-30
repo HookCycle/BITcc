@@ -1,0 +1,147 @@
+#page-home {
+  width: 100vw;
+  height: 100vh;
+
+  padding: 3rem 5rem;
+
+  display: flex;
+  flex-direction: column;
+
+  background-image: url("../../assets/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo {
+  height: 5rem;
+  align-self: flex-start;
+}
+
+.login-content {
+  flex: 1;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.aside {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--color-primary-dark);
+  padding: 5rem 0;
+}
+
+.aside h2 {
+  align-self: center;
+  color: var(--color-text-in-secundary);
+}
+
+.aside p {
+  width: 30vw;
+  align-self: center;
+  color: var(--color-text-in-secundary);
+}
+
+.aside-img {
+  width: 40%;
+  align-self: center;
+}
+
+.middle {
+  width: 0;
+  background: var(--color-primary-dark);
+  border-top: 82vh solid var(--color-box-base);
+  border-left: 13rem solid transparent;
+}
+
+.login-form-container {
+  width: 45vw;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-box-base);
+  border-left: none;
+  padding-top: 5rem;
+}
+
+.login-form-container h2 {
+  color: var(--color-primary);
+  align-self: center;
+}
+
+.login-form {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 3rem;
+}
+
+.login-form input {
+  height: 48px;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: var(--color-box-border);
+}
+
+.login-form input:focus {
+  border-color: var(--color-primary);
+}
+
+.login-form input + input {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.login-form .errors {
+  margin-bottom: 2rem;
+  color: #e00000;
+}
+
+.signup {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5rem;
+}
+
+.signup a {
+  text-decoration: none;
+  color: var(--color-primary-lighter);
+  margin-left: 1rem;
+}
+
+.login-form button {
+  width: 30rem;
+  height: 5rem;
+  border-radius: 0.8rem;
+  align-self: center;
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: var(--color-button-text);
+  background: var(--color-primary-dark);
+
+  transition: background-color 0.2s;
+}
+
+.login-form button:hover {
+  background-color: var(--color-primary);
+}
+
+.logo-container h2 {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 4.6rem;
+  margin-top: 0.8rem;
+}
+
+@media only screen and (min-width: 1600) {
+  .middle {
+    width: 0;
+    height: 0;
+    background: var(--color-primary-dark);
+    border-top: 85vh solid var(--color-box-base);
+    border-left: 20rem solid transparent;
+  }
+}

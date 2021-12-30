@@ -1,0 +1,87 @@
+.pers-content {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.pers-content h3 {
+  align-self: center;
+  margin-bottom: 2rem;
+}
+
+.pers-content form {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.pers-content form input {
+  height: 48px;
+}
+
+.text {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: var(--color-box-border);
+}
+
+.pers-content form label {
+  margin-top: 2rem;
+  color: var(--color-text-base);
+}
+
+.pers-content form input[name="date"] {
+  width: 15vw;
+  border-radius: 0.8rem;
+  outline: 0;
+  border-color: var(--color-box-border);
+}
+
+.pers-content form select {
+  width: 10vw;
+  height: 48px;
+  border-radius: 0.8rem;
+}
+
+.pers-content .second-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pers-content .second-row div {
+  display: flex;
+  flex-direction: column;
+}
+
+.pers-content form input[name="phonenumber"] {
+  width: 12vw;
+}
+
+.pers-content form input:focus {
+  border-color: var(--color-primary);
+}
+
+.pers-content form span {
+  margin-top: 2rem;
+  color: #e00000;
+}
+
+.pers-content .next {
+  align-self: center;
+  margin-top: 10rem;
+}
+
+.pers-content .next {
+  width: 15rem;
+  height: 5rem;
+  border-radius: 0.6rem;
+  color: var(--color-button-text);
+  background: var(--color-primary-dark);
+
+  transition: background-color 0.2s;
+}
+
+.pers-content .next:hover {
+  background-color: var(--color-primary);
+}
