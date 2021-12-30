@@ -44,7 +44,7 @@ g --> RF03
 
 ### Especificicações de Casos de Uso
 
-- [RF01](reqs_RF01.md)
+- [RF01](DOC/reqs_RF01.md)
 - [RF02](reqs_RF02.md)
 - [RF03](reqs_RF03.md)
 - [RF04](reqs_RF04.md)
