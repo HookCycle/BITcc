@@ -45,10 +45,10 @@ g --> RF03
 ### Especificicações de Casos de Uso
 
 - [RF01](UseCaseSpecifications/reqs_RF01.md)
-- [RF02](reqs_RF02.md)
-- [RF03](reqs_RF03.md)
-- [RF04](reqs_RF04.md)
-- [RF05](reqs_RF05.md)
+- [RF02](UseCaseSpecifications/reqs_RF02.md)
+- [RF03](UseCaseSpecifications/reqs_RF03.md)
+- [RF04](UseCaseSpecifications/reqs_RF04.md)
+- [RF05](UseCaseSpecifications/reqs_RF05.md)
 - ....
 
 
