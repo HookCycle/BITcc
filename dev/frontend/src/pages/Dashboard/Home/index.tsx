@@ -1,5 +1,10 @@
 import "./style.css";
-import { FaUser, FaCalendarAlt, FaVideo } from "react-icons/fa";
+import {
+  FaUser,
+  FaCalendarAlt,
+  FaVideo,
+  FaClipboardList,
+} from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -24,6 +29,12 @@ export default function Home() {
         <div className="professional-qtt">
           <FaCalendarAlt color="#585858" size={25} />
           <span>Calendario</span>
+        </div>
+      </div>
+      <div className="home-content">
+        <div className="professional-qtt">
+          <FaClipboardList color="#585858" size={25} />
+          <span>Realizar postagem</span>
         </div>
       </div>
     </div>

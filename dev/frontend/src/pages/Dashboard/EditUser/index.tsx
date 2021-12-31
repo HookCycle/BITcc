@@ -11,6 +11,14 @@ export default function EditUser() {
   const [city, setCity] = useState("Recife");
   const [state, setState] = useState("PE");
 
+  const [formacao, setFormacao] = useState(
+    "Doutorado em IA pela Universidade de Pernambuco"
+  );
+  const [especialidade, setEspecialidade] = useState("IA");
+  const [tccMentodados, setTccMentodados] = useState(
+    "Estudo de diagrama de casos de usos"
+  );
+
   return (
     <div className="edit-container">
       <h2>Editar informações</h2>
@@ -92,80 +100,37 @@ export default function EditUser() {
               />
             </div>
           </div>
-          <div id="edit">
-            <div className="left">
+
+          <div id="edit-personal">
+            <div>
               <h3>Perfil educacional</h3>
               <input
                 type="text"
-                name="nome"
-                placeholder={nome}
+                name="formacao"
+                placeholder={formacao}
                 onChange={(e) => {
-                  setNome(e.target.value);
+                  setFormacao(e.target.value);
                 }}
               />
               <input
                 type="text"
-                name="nome"
-                placeholder={nome}
+                name="especialidade"
+                placeholder={especialidade}
                 onChange={(e) => {
-                  setNome(e.target.value);
+                  setEspecialidade(e.target.value);
                 }}
               />
               <input
                 type="text"
-                name="nome"
-                placeholder={nome}
+                name="tccMentodados"
+                placeholder={tccMentodados}
                 onChange={(e) => {
-                  setNome(e.target.value);
+                  setTccMentodados(e.target.value);
                 }}
               />
-            </div>
-            <div className="right">
-              <h3>Endereço</h3>
-              <div className="first-row">
-                <input
-                  type="text"
-                  name="street"
-                  placeholder={street}
-                  onChange={(e) => {
-                    setStreet(e.target.value);
-                  }}
-                />
-                <input
-                  type="text"
-                  name="housenumber"
-                  placeholder={String(housenumber)}
-                  onChange={(e) => {
-                    setHousenumber(Number(e.target.value));
-                  }}
-                />
-              </div>
-              <div className="second-row">
-                <input
-                  type="text"
-                  name="district"
-                  placeholder={district}
-                  onChange={(e) => {
-                    setDistrict(e.target.value);
-                  }}
-                />
-                <input
-                  type="text"
-                  name="city"
-                  placeholder={city}
-                  onChange={(e) => {
-                    setCity(e.target.value);
-                  }}
-                />
-              </div>
-              <input
-                type="text"
-                name="State"
-                placeholder={state}
-                onChange={(e) => {
-                  setState(e.target.value);
-                }}
-              />
+              <textarea name="nome" placeholder={nome}>
+                Descricao sobre o professor
+              </textarea>
             </div>
           </div>
 
