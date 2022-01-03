@@ -4,12 +4,13 @@ import {
   FaCalendarAlt,
   FaVideo,
   FaClipboardList,
+  FaMedal,
 } from "react-icons/fa";
 
 export default function Home() {
   return (
     <div className="home-container">
-      <h1>Bem-vindo Joabe</h1>
+      <h1>Bem-vindo, Joabe</h1>
       <h2>Dashboard</h2>
       <div className="home-content">
         <div className="professional-qtt">
@@ -29,6 +30,12 @@ export default function Home() {
         <div className="professional-qtt">
           <FaCalendarAlt color="#585858" size={25} />
           <span>Calendario</span>
+        </div>
+      </div>
+      <div className="home-content">
+        <div className="professional-qtt">
+          <FaMedal color="#585858" size={25} />
+          <span>Perfil Educacional</span>
         </div>
       </div>
       <div className="home-content">
