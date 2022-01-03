@@ -14,10 +14,10 @@ const ProgressBar: React.FC<ProgressProps> = (props) => {
     filled: {
       height: "100%",
       width: `10vw`,
-      backgroundColor: "#68db81",
+      backgroundColor: "#0490d3",
     },
     stepCheck: {
-      background: "#04d361",
+      background: "#0490d3",
     },
   };
   return (
