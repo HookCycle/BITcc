@@ -1,5 +1,6 @@
 import { FormEvent, useState } from "react";
 import { useContext } from "react";
+import { useHistory } from "react-router";
 import { FormContext } from "../FormContext";
 import "./style.css";
 
@@ -11,6 +12,7 @@ interface Errors {
 }
 
 export default function FormPersonalInfo() {
+  const history = useHistory();
   const { nextPage } = useContext(FormContext);
   const [fullname, setFullname] = useState("");
   const [birthday, setBirthday] = useState("");
@@ -103,6 +105,9 @@ export default function FormPersonalInfo() {
         {errors.birthday && <span>{errors.birthday}</span>}
         {errors.gender && <span>{errors.gender}</span>}
         {errors.phonenumber && <span>{errors.phonenumber}</span>}
+        <button onClick={() => history.push("/")} className="next">
+          Landing Page
+        </button>
         <button className="next">Próximo</button>
       </form>
     </div>

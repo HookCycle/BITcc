@@ -5,15 +5,14 @@ import "./style.css";
 
 interface Errors {
   registernumber: string;
-  profession: string;
-  specialty: string;
+  typeRegister: string;
+  course: string;
 }
 
 export default function FormProfessionalInfo() {
   const [registernumber, setRegisternumber] = useState("");
-  const [profession, setProfession] = useState("");
-  const [specialty, setSpecialty] = useState("");
-  const [maxrange, setMaxRange] = useState(1);
+  const [typeRegister, setTypeRegister] = useState("");
+  const [course, setCourse] = useState("");
   const [errors, setErrors] = useState({} as Errors);
   const { backPage, nextPage } = useContext(FormContext);
 
@@ -22,17 +21,17 @@ export default function FormProfessionalInfo() {
     if (registernumber === "") {
       setErrors((error) => ({
         ...error,
-        registernumber: "Preencha seu CRM!",
+        registernumber: "Preencha seu codigo!",
       }));
-    } else if (profession === "") {
+    } else if (typeRegister === "") {
       setErrors((error) => ({
         ...error,
-        profession: "Selecione sua profissão!",
+        typeRegister: "Selecione seu tipo de cadastro!",
       }));
-    } else if (specialty === "") {
+    } else if (course === "") {
       setErrors((error) => ({
         ...error,
-        specialty: "Selecione sua especialidade!",
+        course: "Selecione seu curso!",
       }));
     } else {
       onSubmit();
@@ -49,59 +48,42 @@ export default function FormProfessionalInfo() {
       <form onSubmit={validate}>
         <input
           type="text"
-          placeholder="CRM"
+          placeholder="Codigo"
           value={registernumber}
           onChange={(e) => setRegisternumber(e.target.value)}
         />
         <select
-          name="profession"
-          onChange={(e) => setProfession(e.target.value)}
+          name="typeRegister"
+          onChange={(e) => setTypeRegister(e.target.value)}
           defaultValue="Selecione"
         >
           <option value="Selecione" disabled hidden>
-            Profissão
+            Tipo de Cadastro
           </option>
-          <option value="Médico(a)">Médico(a)</option>
-          <option value="Enfermeiro(a)">Enfermeiro(a)</option>
+          <option value="Educador(a)">Educador(a)</option>
+          <option value="Estudante(a)">Estudante(a)</option>
         </select>
 
-        <select onChange={(e) => setSpecialty(e.target.value)}>
-          {profession === "Médico(a)" ? (
+        <select onChange={(e) => setCourse(e.target.value)}>
+          {typeRegister === "Educador(a)" ? (
             <>
-              <option value="Ginecologista">Ginecologista</option>
-              <option value="Dermatologista">Dermatologista</option>
-              <option value="Ortopedista">Ortopedista</option>
-              <option value="Cardiologista">Cardiologista</option>
-              <option value="Otorrinolaringologista">
-                Otorrinolaringologista
-              </option>
+              <option value="Computacao">Computacao</option>
+              <option value="Eletrica">Eletrica</option>
+              <option value="Mecatronica">Mecatronica</option>
+              <option value="Civil">Civil</option>
+              <option value="Telecomunicacoes">Telecomunicacoes</option>
             </>
           ) : (
             <>
-              <option value="Enfermeiro(a) UTI">Enfermeiro(a) UTI</option>
-              <option value="Enfermeiro(a) pediátrico">
-                Enfermeiro(a) pediátrico
-              </option>
-              <option value="Enfermeiro(a) urgencia">
-                Enfermeiro(a) urgencia
-              </option>
+              <option value="Computacao">Computacao</option>
+              <option value="Eletrica">Eletrica</option>
+              <option value="Civil">Civil</option>
             </>
           )}
         </select>
-        <label>Distância máx de atendimento</label>
-        <div className="range">
-          <input
-            type="range"
-            min="1"
-            max="10"
-            value={maxrange}
-            onChange={(e) => setMaxRange(Number(e.target.value))}
-          />
-          <span>{maxrange + " km"}</span>
-        </div>
         {errors.registernumber && <span>{errors.registernumber}</span>}
-        {errors.profession && <span>{errors.profession}</span>}
-        {errors.specialty && <span>{errors.specialty}</span>}
+        {errors.typeRegister && <span>{errors.typeRegister}</span>}
+        {errors.course && <span>{errors.course}</span>}
         <div className="buttons">
           <button className="back" onClick={backPage}>
             Voltar
