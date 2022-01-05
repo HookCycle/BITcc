@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { useHistory } from "react-router-dom";
+import swal from "sweetalert";
 import "./style.css";
 
 export default function EditUser() {
@@ -10,14 +12,39 @@ export default function EditUser() {
   const [district, setDistrict] = useState("Olinda");
   const [city, setCity] = useState("Recife");
   const [state, setState] = useState("PE");
-
   const [formacao, setFormacao] = useState(
-    "Doutorado em IA pela Universidade de Pernambuco"
+    "Bacharelado em Engenharia da computacao pela UPE"
   );
-  const [especialidade, setEspecialidade] = useState("IA");
   const [tccMentodados, setTccMentodados] = useState(
-    "Estudo de diagrama de casos de usos"
+    "Internet das Coisas (IoT), Segurança da informação"
   );
+  const [especialidade, setEspecialidade] = useState(
+    "Business Intelligence (BI) Aplicada à Sistemas para Tomada de Decisões Estratégicas"
+  );
+  const history = useHistory();
+  function deleteAccont() {
+    swal({
+      title: "Voce deseja apagar sua conta?",
+      text: "Caso confirme essa opcao pederar todos os seus dados na plataforma!",
+      icon: "warning",
+      buttons: {
+        cancel: { visible: true, text: "Cancelar" },
+        confirm: { visible: true, text: "Sair" },
+      },
+      dangerMode: true,
+    }).then((willDelete) => {
+      if (willDelete) {
+        swal("Poof! Sua conta foi deletada com sucesso!", {
+          icon: "success",
+        });
+      } else {
+        swal("Acao foi cancelada!");
+      }
+      setTimeout(function () {
+        history.push("/");
+      }, 1500);
+    });
+  }
 
   return (
     <div className="edit-container">
@@ -114,21 +141,21 @@ export default function EditUser() {
               />
               <input
                 type="text"
-                name="especialidade"
-                placeholder={especialidade}
-                onChange={(e) => {
-                  setEspecialidade(e.target.value);
-                }}
-              />
-              <input
-                type="text"
                 name="tccMentodados"
                 placeholder={tccMentodados}
                 onChange={(e) => {
                   setTccMentodados(e.target.value);
                 }}
               />
-              <textarea name="nome" placeholder={nome}>
+              <input
+                type="text"
+                name="especialidade"
+                placeholder={especialidade}
+                onChange={(e) => {
+                  setEspecialidade(e.target.value);
+                }}
+              />
+              <textarea className="description" name="nome" placeholder={nome}>
                 Descricao sobre o professor
               </textarea>
             </div>
@@ -138,6 +165,9 @@ export default function EditUser() {
             Atualizar
           </button>
         </form>
+        <button onClick={deleteAccont} className="delete">
+          Deletar Conta
+        </button>
       </div>
     </div>
   );
