@@ -8,7 +8,7 @@
   <img src="././screenshots/Landing.png"   width="45%" style="margin-right: 30px"/>
   <img src="./screenshots/SignUp.png" width="45%"style="margin-right: 30px"/>
   <img src="./screenshots/Dashboard.png"width="45%"style="margin-right: 30px"/>
-  <img src="./screenshots/EditUser.png"width="45%"style="margin-right: 30px"/>
+
 </div>
 
 ### Pré-requisitos
