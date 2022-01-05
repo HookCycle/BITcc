@@ -78,6 +78,10 @@ export default function Login() {
               <p>Não possui cadastro?</p>
               <Link to="/signup">Cadastre-se</Link>
             </div>
+            <div className="forgetPassword">
+              <p>Esqueceu a senha?</p>
+              <Link to="/forgetPassword">Recuperar</Link>
+            </div>
             <button type="submit">Entrar</button>
           </form>
         </div>
