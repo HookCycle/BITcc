@@ -7,12 +7,14 @@ import {
   FaSignOutAlt,
   FaComments,
   FaQuestion,
+  FaNewspaper,
 } from "react-icons/fa";
+import swal from "sweetalert";
 import Home from "./Home";
 import EditUser from "./EditUser";
-import swal from "sweetalert";
-import ChatBox from "./chatBox";
-import Faq from "./faq";
+import ChatBox from "./ChatBox";
+import Faq from "./Faq";
+import NewSpaper from "./NewSpaper";
 
 export default function Dashboard() {
   const history = useHistory();
@@ -52,6 +54,9 @@ export default function Dashboard() {
           <Link to="/dashboard/chatbox">
             <FaComments color="#ffffff" size={30} />
           </Link>
+          <Link to="/dashboard/newspaper">
+            <FaNewspaper color="#ffffff" size={30} />
+          </Link>
           <Link to="/dashboard/faq">
             <FaQuestion color="#ffffff" size={30} />
           </Link>
@@ -65,8 +70,9 @@ export default function Dashboard() {
         <Switch>
           <Route exact path="/dashboard/" component={Home} />
           <Route exact path="/dashboard/useredit" component={EditUser} />
-          <Route exact path="/dashboard/chatbox" component={ChatBox} />
-          <Route exact path="/dashboard/faq" component={Faq} />
+          <Route exact path="/dashboard/Chatbox" component={ChatBox} />
+          <Route exact path="/dashboard/NewSpaper" component={NewSpaper} />
+          <Route exact path="/dashboard/Faq" component={Faq} />
         </Switch>
       </div>
     </div>
