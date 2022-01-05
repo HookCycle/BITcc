@@ -3,8 +3,10 @@
 ## Engenharia de Sofware - turma ES
 
 ### Integrantes
+- Bruna Lins
 - Lucas Hellanio
-
+- Pedro Gabriel Lima
+- Silas Nunes
 
 ## Requisitos Funcionais
 
@@ -16,6 +18,19 @@
 - RF04 - ?????
 - RF05 - ?????
 - RF06 - ?????
+- RF07 - FAQ
+- RF08 - ?????
+- RF09 - ?????
+- RF10 - Editar Perfil
+- RF11 - ?????
+- RF12 - ?????
+- RF13 - Visualizar o Próprio Perfil
+- RF14 - ?????
+- RF15 - ?????
+- RF16 - ?????
+- RF17 - ?????
+- RF18 - Calendário no Dashboard
+- RF19 - Chatbox
 - .....
 
 
@@ -24,22 +39,19 @@
 ```plantuml
 @startuml
 left to right direction
-actor Guest as g
-package Professional {
-  actor Estudant as c
-  actor "Educator" as fc
+actor Usuario as u
+package Atores {
+  actor Estudante as e
+  actor "Educador" as or
+  actor "ADM" as Ad
 }
-package Restaurant {
-  usecase "Register" as RF01
+package Usuário {
+  usecase "Fazer Cadastro" as RF01
   usecase "Login" as RF02
   usecase "Logoff" as RF03
-  usecase "Forget password" as RF04
-}
-fc --> RF04
-g --> RF01
-g --> RF02
-g --> RF03
-@enduml
+  usecase "Esqueceu a senha" as RF04
+  usecase "Apagar conta" as RF05
+  usecase "Contatar Suporte" as RF06
 ```
 
 ### Especificicações de Casos de Uso
