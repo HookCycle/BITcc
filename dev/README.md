@@ -22,7 +22,7 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 
 ```bash
 # Acesse a pasta do projeto no terminal/cmd
-$ cd desafio-salvus
+$ cd BITCC
 
 # Vá para a pasta frontend
 $ cd frontend
@@ -43,15 +43,3 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Node.js](https://nodejs.org/en/)
 - [React](https://pt-br.reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
-
-### Autor
-
----
-
-<a href="https://blog.rocketseat.com.br/author/thiago/">
- <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/37600134?v=4" width="100px;" alt=""/>
- <br />
- <sub><b>Davyson Melo</b></sub></a>
-
-[![Twitter Badge]
-[![Gmail Badge]
