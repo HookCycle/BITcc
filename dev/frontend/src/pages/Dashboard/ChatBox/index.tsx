@@ -48,7 +48,7 @@ export default function ChatBox() {
       <div className="home-content">
         <div className="professional-qtt">
           <FaUser color="#ffff00" size={25} />
-          <span>Sara Silva</span>
+          <span>Bruna Lins</span>
         </div>
       </div>
       <div className="home-content">
