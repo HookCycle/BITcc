@@ -13,10 +13,10 @@
 ### Lista de Requisitos Funcionais
 
 - RF01 - Cadastrar
-- RF02 - ??????
-- RF03 - ?????
-- RF04 - ?????
-- RF05 - ?????
+- RF02 - Login
+- RF03 - Logoff
+- RF04 - Deletar Conta
+- RF05 - Esqueci a senha
 - RF06 - ?????
 - RF07 - FAQ
 - RF08 - ?????
@@ -52,6 +52,21 @@ package Usuário {
   usecase "Esqueceu a senha" as RF04
   usecase "Apagar conta" as RF05
   usecase "Contatar Suporte" as RF06
+  usecase "FAQ" as RF07
+  usecase "Upload de Arquivos" as RF08
+}
+package Admin{
+  usecase "Cadastrar Banca" as RF09
+}
+package Educador{
+  usecase "Editar Perfil" as RF10
+  usecase "Cadastrar Link Sala" as RF11
+  usecase "Ver Quantidade de Orientandos" as RF12
+  usecase "Visualizar Próprio Perfil" as RF13
+  usecase "Fazer Perfil Educacional" as RF14
+  usecase "Alimentar Feed de Notícias" as RF15
+  usecase "Ver Quantas Salas Virtuais Possui" as RF16
+}
 ```
 
 ### Especificicações de Casos de Uso
