@@ -37,23 +37,28 @@ export default function ForgetPassword() {
 
   return (
     <div className="forgert-password">
-      <h3>Recuperação de senha</h3>
-      <form onSubmit={validate}>
-        <div className="forgert-password">
-          <input
-            name="email"
-            type="text"
-            placeholder="test@ecomp.poli.br"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
+      <div className="recovery-content">
+        <h3>Recuperação de senha</h3>
+        <form onSubmit={validate}>
+          <div>
+            <input
+              name="email"
+              type="text"
+              placeholder="test@ecomp.poli.br"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
+          {errors.email && <span>{errors.email}</span>}
+        </form>
+        <div className="button">
+          <button onClick={() => history.push("/")} className="back">
+            Landing Page
+          </button>
+          <button className="send" onClick={forgetPassword}>
+            Enviar
+          </button>
         </div>
-        {errors.email && <span>{errors.email}</span>}
-      </form>
-      <div className="button">
-        <button className="send" onClick={forgetPassword}>
-          Enviar
-        </button>
       </div>
     </div>
   );

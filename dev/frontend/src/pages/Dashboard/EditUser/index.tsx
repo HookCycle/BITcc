@@ -24,7 +24,7 @@ export default function EditUser() {
   const history = useHistory();
   function deleteAccont() {
     swal({
-      title: "Voce deseja apagar sua conta?",
+      title: "Você deseja apagar sua conta?",
       text: "Caso confirme essa opcao pederar todos os seus dados na plataforma!",
       icon: "warning",
       buttons: {
@@ -37,12 +37,12 @@ export default function EditUser() {
         swal("Poof! Sua conta foi deletada com sucesso!", {
           icon: "success",
         });
+        setTimeout(function () {
+          history.push("/");
+        }, 1500);
       } else {
-        swal("Acao foi cancelada!");
+        swal("Ação foi cancelada!");
       }
-      setTimeout(function () {
-        history.push("/");
-      }, 1500);
     });
   }
 
