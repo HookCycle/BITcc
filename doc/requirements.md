@@ -17,7 +17,7 @@
 - RF03 - Logoff
 - RF04 - Deletar Conta
 - RF05 - Esqueci a senha
-- RF06 - ?????
+- RF06 - ??????
 - RF07 - FAQ
 - RF08 - ?????
 - RF09 - ?????
@@ -25,10 +25,10 @@
 - RF11 - ?????
 - RF12 - ?????
 - RF13 - Visualizar o Próprio Perfil
-- RF14 - ?????
-- RF15 - ?????
-- RF16 - ?????
-- RF17 - ?????
+- RF14 - Fazer Perfil Educacional
+- RF15 - Alimentar Feed de Notícias
+- RF16 - Ver Quantas Salas Virtuais Possui
+- RF17 - Filtro de Busca
 - RF18 - Calendário no Dashboard
 - RF19 - Chatbox
 - .....
@@ -67,6 +67,20 @@ package Educador{
   usecase "Alimentar Feed de Notícias" as RF15
   usecase "Ver Quantas Salas Virtuais Possui" as RF16
 }
+package Plataforma{
+  usecase "Filtro de Busca" as RF17
+  usecase "Calendário no Dashboard" as RF18
+  usecase "Chatbox" as RF19
+}
+  u --> RF01
+  u --> RF02
+  u --> RF03
+  u --> RF04
+  u --> RF05
+  u --> RF06
+  u --> RF07
+  u --> RF08
+u -[#0000FF]-> e
 ```
 
 ### Especificicações de Casos de Uso
@@ -94,4 +108,3 @@ package Educador{
 [3] React ...
 
 [4] PlantUML ...
-
