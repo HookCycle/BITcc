@@ -1,4 +1,4 @@
-# Relatorio de Especificacoes de casos de uso do SITCC
+# Relatorio de Especificacoes de casos de uso do BITCC
 
 ## Engenharia de Sofware - turma ES
 
