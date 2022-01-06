@@ -81,6 +81,19 @@ package Plataforma{
   u --> RF07
   u --> RF08
 u -[#0000FF]-> e
+u -[#0000FF]-> Ad
+  Ad --> RF09
+  or --> RF10
+  or --> RF11
+  or --> RF12
+  or --> RF13
+  or --> RF14
+  or --> RF15
+  or --> RF16
+  u --> RF17
+  u --> RF18
+  u --> RF19
+@enduml
 ```
 
 ### Especificicações de Casos de Uso
