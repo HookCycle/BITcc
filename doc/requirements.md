@@ -31,7 +31,6 @@
 - RF17 - Filtro de Busca
 - RF18 - Calendário no Dashboard
 - RF19 - Chatbox
-- .....
 
 
 ### Diagrama de Casos de Uso
@@ -110,14 +109,15 @@ u -[#0000FF]-> Ad
 
 ### Usabilidade
 
-... Segundo ... Autor ...
+- O sistema de Atendimento a Clientes será construído para rodar em ambiente web. Deverá possui um design responsivo
+- Os usuários poderam operar no sistema de forma independente.
+
+### Confiabilidade
+
+- o sistema deverá ter alta disponibilidade
 
 ## Referências
 
-[1] Autor ...
+[1] [React](https://reactjs.org/)
 
-[2] Autor ...
-
-[3] React ...
-
-[4] PlantUML ...
+[2] [PlantUML](https://plantuml.com/)
