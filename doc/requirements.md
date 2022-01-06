@@ -102,7 +102,20 @@ u -[#0000FF]-> Ad
 - [RF03](UseCaseSpecifications/reqs_RF03.md)
 - [RF04](UseCaseSpecifications/reqs_RF04.md)
 - [RF05](UseCaseSpecifications/reqs_RF05.md)
-- ....
+- [RF05](UseCaseSpecifications/reqs_RF06.md)
+- [RF05](UseCaseSpecifications/reqs_RF07.md)
+- [RF05](UseCaseSpecifications/reqs_RF08.md)
+- [RF05](UseCaseSpecifications/reqs_RF09.md)
+- [RF05](UseCaseSpecifications/reqs_RF10.md)
+- [RF05](UseCaseSpecifications/reqs_RF11.md)
+- [RF05](UseCaseSpecifications/reqs_RF12.md)
+- [RF05](UseCaseSpecifications/reqs_RF13.md)
+- [RF05](UseCaseSpecifications/reqs_RF14.md)
+- [RF05](UseCaseSpecifications/reqs_RF15.md)
+- [RF05](UseCaseSpecifications/reqs_RF16.md)
+- [RF05](UseCaseSpecifications/reqs_RF17.md)
+- [RF05](UseCaseSpecifications/reqs_RF18.md)
+- [RF05](UseCaseSpecifications/reqs_RF19.md)
 
 
 ## Requisitos não-funcionais
@@ -118,6 +131,4 @@ u -[#0000FF]-> Ad
 
 ## Referências
 
-[1] [React](https://reactjs.org/)
-
-[2] [PlantUML](https://plantuml.com/)
+[1] [PlantUML](https://plantuml.com/)
