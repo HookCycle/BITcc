@@ -17,13 +17,13 @@
 - RF03 - Logoff
 - RF04 - Deletar Conta
 - RF05 - Esqueci a senha
-- RF06 - ??????
+- RF06 - Contatar Suporte
 - RF07 - FAQ
-- RF08 - ?????
-- RF09 - ?????
+- RF08 - Upload de Arquivos
+- RF09 - Cadastrar Banca
 - RF10 - Editar Perfil
-- RF11 - ?????
-- RF12 - ?????
+- RF11 - Cadastrar link da sala virtual.
+- RF12 - Ver Quantidade de Orientandos
 - RF13 - Visualizar o Próprio Perfil
 - RF14 - Fazer Perfil Educacional
 - RF15 - Alimentar Feed de Notícias
