@@ -79,8 +79,9 @@ package Plataforma{
   u --> RF06
   u --> RF07
   u --> RF08
-u -[#0000FF]-> e
-u -[#0000FF]-> Ad
+u <|-[#0000FF]- e
+u <|-[#0000FF]- Ad
+u <|-[#0000FF]- or
   Ad --> RF09
   or --> RF10
   or --> RF11
